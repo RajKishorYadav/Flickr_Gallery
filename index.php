@@ -36,7 +36,7 @@ var tagList = [];
 $(function(){
     $(document).on('click','input[type=submit]',function(){
         $('#tags').append('<div> ' + $('#addtag').val() + '<a href="#" class="item">x</a></div>');
-		$("#container").html('<h2>'+ $('#addtag').val() +'</h2><div data-tags="css" class="gallery component" data-toggle="jsfg" data-per-page="4"></div>');
+		$("#container").append('<h2>'+ $('#addtag').val() +'</h2><div data-tags="css" class="gallery component" data-toggle="jsfg" data-per-page="4"></div>');
     });
     $(document).on('click','.item',function(){
         $(this).parent().remove();
